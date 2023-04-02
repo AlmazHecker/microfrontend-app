@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
       # Copy files to remote machine
       # Commands below will be executed inside of remote container
-      - run: npm install
+      - run: npm install --legacy-peer-deps
       - run: npm run build
 
       - uses: shinyinc/action-aws-cli@v1.2
