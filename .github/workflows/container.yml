@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
       # Copy files to remote machine
+      - uses: actions/checkout@v2
       # Commands below will be executed inside of remote container
       - run: npm install --legacy-peer-deps
       - run: npm run build
