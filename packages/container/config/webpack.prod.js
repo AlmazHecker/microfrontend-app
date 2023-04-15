@@ -9,7 +9,9 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js', // some built files will gonna use this as a template for naming them
+    publicPath: '/container/latest/',
   },
+
   plugins: [
     new ModuleFederationPlugin({
       name: 'Container',
